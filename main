@@ -1,0 +1,240 @@
+% Welcome to the simple DIS curriculum vitae template!
+% Please delete any sections that do not apply to your past experiences. We do not expect that applicants will have itmes for all of the sections included here. You can also rename or revise sections to best fit with your personal accomplishments.
+% The final document should not exceed 3 pages
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\usepackage[sfdefault]{inter} 
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\setlength{\footskip}{10pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{0.0in}
+\addtolength{\evensidemargin}{0.0in}
+\addtolength{\textwidth}{0.0in}
+\addtolength{\topmargin}{0.2in}
+\addtolength{\textheight}{0.0in}
+
+
+\urlstyle{same}
+
+%\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \it\vspace{3pt}
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+
+\begin{center}
+    {\huge JooKyung Yuh} \\ \vspace{0pt}
+    \begin{multicols}{2}
+    \begin{flushleft}
+    \large{9, Cheonho-daero 89-gil} \\
+%  optional line below if you need more address info
+    \large{414, JangAnSaengHwal} \\
+    \large{02644, Seoul, Republic of Korea} \\
+    \end{flushleft}
+    
+    \begin{flushright}
+% below could be LinkedIn, GitHub, or a personal website or social media account (if used for professional purposes)
+    \href{{url for website you want to link}} \large{https://github.com/Users01001} \\
+% please ensure your email address is one you check
+    \href{mailto:{your email adress}} \large{johnlu0410@korea.ac.kr}
+    \end{flushright}
+    \end{multicols}
+\end{center}
+
+
+%-----------EDUCATION-----------
+% Please list your current institution first and then past schools in reverse chronology. No need for grades, etc. You do not need to include high school but may do so if there are accomplishments you would like to highlight.
+\section{Education}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+% list month-year for the start date followed by month-year for the end date (or "Present" if in progress)
+{Korea University}{03/2019 -- Present}
+        {Undergraduate Senior}
+        {Seoul, Republic of Korea}
+        \resumeItemListStart
+            \small\resumeItem{Major in Electrical Engineering (Computer Architecture, Digital circuit)}
+            \resumeItem{2.82/4.50 GPA}
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research(Work) Experience}
+% this section can include experience gained in coursework, or group or independent research projects
+% delete or add Subheading sections as needed
+\resumeSubHeadingListStart
+
+\resumeSubheading
+% list month-year for the start date followed by month-year for the end date (or "Present" if ongoing)
+        {Startup Team Project}{01/2024 -- Present}
+        {Elliot}{Seoul, Republic of Korea}
+      \resumeItemListStart
+        \small\resumeItem{Web Developer, Using React, NestJS, TypeScript, AWS Tools}
+        \resumeItem{IOS App Developer, Using Swift}
+    \resumeItemListEnd
+\resumeSubheading   
+        {DevKor Club / Location-based social media Project}{03/2022 -- Present}
+        {Korea Univ. DevKor Club}{Seoul, Republic of Korea}
+      \resumeItemListStart
+        \resumeItem{Front-end Developer, Using React, TypeScript}
+    \resumeItemListEnd
+\resumeSubheading
+        {Homebrew Club / Club attendance check Web progroject}{03/2022 -- 08/2022}
+        {Korea Univ. Homebrew Club}{Seoul, Republic of Korea}
+      \resumeItemListStart
+        \small\resumeItem{Back-end Developer, Using NestJS, TypeScript, MySQL, MongoDB}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+% OPTIONAL SECTION : DELETE FROM HERE UNTIL % % % % TO REMOVE
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+% if you have been employed, do volunteer activities, or have held other formal or informal jobs, you can list them here.   
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+% list month-year for the start date followed by month-year for the end date (or "Present" if ongoing)
+        {AI, ML/DL Study}{08/2023  -- 12/2023}
+        {Korea Univ. Hana Wa Yeong}{Seoul, Republic of Korea}
+      \resumeItemListStart
+        \small\resumeItem{Weekly paper reviews and presentation of PPT materials(Alexnet, Transformer etc.)}
+        \resumeItem{Collecting and processing AI project data recommended for coordination by weather conditions, Using detection}
+        \resumeItem{}
+
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {CV, Algorithm Study}{08/2023 -- Present}
+      {Korea Univ. DevKor Club}{Seoul, Republic of Korea}
+      \resumeItemListStart
+        \small\resumeItem{Presentation of CV specific topics weekly (computer structure, operating system, linear regression, AI, etc.)}
+        \resumeItem{commentary and presentation Coding test and algorithm problem , CPP}
+        \resumeItemListEnd
+
+        
+
+\resumeSubHeadingListEnd
+% % % % END OPTIONAL SECTION PROFESSIONAL EXPERIENCE % % % %
+
+% OPTIONAL SECTION : DELETE FROM HERE UNTIL % % % % TO REMOVE
+%-----------RESEARCH PRESENTATIONS-----------
+\section{Related Courses} 
+% It is not expected that applicants will have items for this section, but if you have presented or published research findings, you are welcome to include them here
+\resumeItemListStart
+    \small\resumeItem{
+    {Digital Integrated Circuit}{(KECE49600) : \\
+    learned the current address of digital circuits and the circuits (sRAM etc.) actually used in the field. Using CAD tools, we were able to create a layout of the circuit and design the digital circuit by looking at the output measurements according to the input.}
+    }
+    \resumeItem{
+    {Mathematical Techniques of Artificial Intelligence}{(MATH49101) : \\
+    Mathematical proof of MSE to Maximum likelihood estimation using Gaussian samples to analyze and generalize}
+    }
+    \resumeItem{
+    {Probability and Random Processor}{(KECE20902) : \\
+    From the concept of basic probability to random variable functions such as CDF, PMF, PDF probability measures, Markov and Chevychev inequality, and Chernoff bound, we learned about random vectors.}
+    }
+    \resumeItem{
+    {Information Theory and Inference Learning}{(COSE48500) : \\
+    calculate the entropy of information based on Shannon Information Content, calculate the entropy in various data models using it, explain the Channel, and explain JPEG weathering as a key example. After processing the information through the Channel, we were able to learn the estimate, which is a decoding process, and analyze the Maximum Liehood Estimator (MLE).}
+    }
+    \resumeItem{
+    {Signals and systems}{(KECE31301) : \\
+    The system is actually a set of discrete signals divided into 0 and 1, but the actual signal can only be continuous due to various noises and surrounding conditions, and we learned the theoretical method of mixing or decoding the signal after converting the sum of the signals into Taylor Series Fourier transform and Laplace transform.}
+    }
+\resumeItemListEnd
+% % % % END OPTIONAL SECTION RESEARCH PRESENTATIONS % % % %
+
+% OPTIONAL SECTION : DELETE FROM HERE UNTIL % % % % TO REMOVE 
+%-----------AWARDS & HONORS-----------
+\section{Awards \& Honors} 
+% This section can include academic achievements and honors as well as recognition in your community. Remove or add sections as needed.
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {Bronze, Kwangwoon University Collaborative Robot Battle Competition}{}
+    {Korea Univ., Kwangwoon Univ.}{2019}
+    %\resumeSubheading
+    %{Title or brief description of the award}{}
+    %{University, Sponsor or Organization}{year(s)}
+\resumeSubHeadingListEnd
+% % % % END OPTIONAL SECTION AWARDS & HONORS % % % %
+
+% OPTIONAL SECTION : DELETE FROM HERE UNTIL % % % % TO REMOVE 
+%-----------SKILLS-----------
+\section{Specialized Skills}
+% This section can include programming or spoken languages, text editing and general software knowledge, certifications, version control or project management tools, or other skills that might be relevant. You can include as many or as few as you like: delete or add as needed.  
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \normalsize{\item{
+     \textbf{Heading, eg. "Programming Languages"}{: Python (Pytorch, Pandas, Numpy) (intermediate), C/CPP (intermediate), JAVA (beginner), TS(Frameworks : React, NodeJS, NextJS, NestJS) (intermediate), SQL (intermediate), Swift (beginner), Matlab (beginner), VLSI(beginner), R (Challenging at Kaggle) (beginner), STATAMP (beginner)} \\
+     \textbf{Extra lectures listened}{: CS231N (CNN, RNN, YOLE etc.), CS229}\\
+    }}
+ \end{itemize}
+% % % % END OPTIONAL SECTION SKILLS % % % %
+
+% OPTIONAL SECTION : DELETE FROM HERE UNTIL % % % % TO REMOVE 
+%-----------OTHER INTERESTS-----------
+\section{Other Interests}
+% Also an optional section, for any hobbies, sports, artistic and musical pursuits, etc. that you would like to include. You can include as many or as few as you like: delete or add as needed. 
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \normalsize{\item{
+     \textbf{Heading, eg. "Athletics"}{: {photography} } \\
+      %\textbf{Other heading}{: {the thing you want to include} } \\
+    }}    
+ \end{itemize}
+% % % % END OPTIONAL SECTION OTHER INTERESTS % % % %
+
+\end{document}
